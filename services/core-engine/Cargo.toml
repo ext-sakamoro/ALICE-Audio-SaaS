@@ -12,12 +12,6 @@ tower-http = { version = "0.6", features = ["cors", "trace"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 uuid = { version = "1", features = ["v4"] }
-alice-audio = { path = "../../../ALICE-Audio", optional = true }
-
-[features]
-default = []
-alice-core = ["alice-audio"]
-
 [profile.release]
 opt-level = 3
 lto = "fat"
